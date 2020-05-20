@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+</head>
+<body>
+<header class="header">
+  <h1><%= htmlWebpackPlugin.options.title %></h1>
+</header>
+<main class="main">
+  <form method="get" class="search" autocomplete="off">
+    <input type="search" class="search__input" name="movie-name" placeholder="Search for..." autocomplete="off" autofocus>
+    <button type="submit" class="search__submit">search</button>
+  </form>
+  <section class="movies">
+    <p class="notification"></p>
+    <p class="loading"></p>
+    <div class="swiper-container">
+      <div class="swiper-wrapper movies__container">
+        <!-- Slides -->
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <p class="creator__info">RSSchool 2020q1</p>
+  <p class="creator__info">iralitv</p>
+</footer>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+</body>
+</html>
