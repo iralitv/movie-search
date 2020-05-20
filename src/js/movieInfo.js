@@ -12,7 +12,7 @@ function memoize(method) {
 const getSearchMovie = memoize(async (movieTitle = 'dream', page) => {
   try {
     const API_KEY = '4c9a6917';
-    const url = `http://www.omdbapi.com/?s=${movieTitle}&page=${page}&apikey=${API_KEY}`;
+    const url = `https://www.omdbapi.com/?s=${movieTitle}&page=${page}&apikey=${API_KEY}`;
     const res = await fetch(url);
     const data = await res.json();
 
@@ -25,7 +25,7 @@ const getSearchMovie = memoize(async (movieTitle = 'dream', page) => {
 const getMovieData = memoize(async (imdbID) => {
   try {
     const API_KEY = '4c9a6917';
-    const url = `http://www.omdbapi.com/?i=${imdbID}&apikey=${API_KEY}`;
+    const url = `https://www.omdbapi.com/?i=${imdbID}&apikey=${API_KEY}`;
     const res = await fetch(url);
     const data = await res.json();
 
